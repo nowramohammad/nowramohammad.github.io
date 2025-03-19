@@ -1,37 +1,182 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
+
+/* Header styles */
 header {
-    background-color: #4a4e69;
+    background-color: #4a90e2;
     color: white;
+    padding: 30px 0;
     text-align: center;
-    padding: 20px;
-}
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin-bottom: 40px; /* Spacing below header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
-h2 {
-    color: #22223b;
-}
-ul {
-    list-style-type: square;
-}
-a {
-    color: #4a4e69;
+
+header a {
+    color: white;
     text-decoration: none;
 }
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #22223b;
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Main content styles */
+.main-content {
+    margin-top: 40px;
+}
+
+/* Section styles for each individual section */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 3px solid #357ABD; /* Blue border around sections */
+    border-radius: 12px; /* Rounded corners for each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #4a90e2;
+}
+
+/* Section text formatting */
+section p,
+section ul {
+    font-size: 1.1rem;
+}
+
+/* Skill section layout */
+.skill-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd; /* Box frame for each skill item */
+}
+
+.skill-item h3 {
+    color: #4a90e2;
+}
+
+/* Projects section layout */
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd; /* Box frame for each project card */
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #4a90e2;
+}
+
+.project-card p {
+    margin-top: 10px;
+}
+
+.project-card .btn {
+    display: inline-block;
+    background-color: #4a90e2;
     color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.project-card .btn:hover {
+    background-color: #357ABD;
+}
+
+/* Experience section layout */
+.experience-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd; /* Box frame for experience items */
+}
+
+.experience-item h3 {
+    color: #4a90e2;
+}
+
+/* Education section layout */
+.education-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd; /* Box frame for education items */
+}
+
+.education-item h3 {
+    color: #4a90e2;
+}
+
+/* Volunteer section layout */
+.volunteer-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd; /* Box frame for volunteer items */
+}
+
+.volunteer-item h3 {
+    color: #4a90e2;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #357ABD;
 }
